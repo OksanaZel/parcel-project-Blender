@@ -1,5 +1,37 @@
-<header>
+<header class="header">
     <div class="container">
-        <h1>Это хедер</h1>
+        <nav class="nav">
+            <a class="logo" href="./index.html">Hell
+                <svg class="logo__icon" width="22" height="30">
+                    <use href="./images/sprite.svg#icon-flame"></use>
+                </svg>EN
+                <p class="logo__title"><span>Адский&nbsp</span>английский</p>
+            </a>
+            <button
+            type="button"
+            class="burger"
+            data-menu-button
+            aria-expanded="true">
+                <svg class="burger__icons" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                    <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__list-link" href="#">Программы обучения</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__list-link" href="#">О нас</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__list-link" href="#">Варианты обучения</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__list-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button">Консультация по телефону</button>
     </div>
 </header>
