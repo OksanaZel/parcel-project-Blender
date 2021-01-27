@@ -1,9 +1,12 @@
 .hero {
-  padding: 50px 0;
+  padding: 70px 0;
   background-image: url(../images/hero/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  background-position: center;
+
+  &__thumb {
+    text-align: center;
+  }
 
   &__title {
     margin-bottom: 30px;
@@ -14,6 +17,7 @@
     font-size: 20px;
     line-height: 1.35;
     letter-spacing: 0.03em;
+    text-align: left;
 
     color: var(--primary-text-color);
   }
@@ -27,6 +31,7 @@
     font-size: 14px;
     line-height: 1.571;
     letter-spacing: 0.08em;
+    text-align: left;
 
     color: var(--secondary-text-color);
 
@@ -51,5 +56,28 @@
 
   &__btn {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .container {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+  }
+  .hero {
+    background-image: url(../images/hero/hero-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__title {
+      font-size: 26px;
+      line-height: 1.308;
+    }
+  }
+
+  .hero__preview-pic {
+    width: 375.75px;
+    height: 320px;
   }
 }
