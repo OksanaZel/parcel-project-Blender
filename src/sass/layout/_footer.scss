@@ -1,0 +1,32 @@
+.logo {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.143;
+  letter-spacing: 0.04em;
+
+  color: var(--primary-text-color);
+
+  &__title {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+  }
+
+  &__span {
+    color: var(--accent-color);
+  }
+
+  &__icon {
+    fill: var(--accent-color);
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+}
