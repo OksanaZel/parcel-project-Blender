@@ -1,0 +1,55 @@
+.hero {
+  padding: 50px 0;
+  background-image: url(../images/hero/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.35;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+  }
+
+  &__discription {
+    margin-bottom: 30px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.571;
+    letter-spacing: 0.08em;
+
+    color: var(--secondary-text-color);
+
+    &-span-2 {
+      font-weight: 700;
+      color: var(--additional-bg-color);
+    }
+
+    &-span-3 {
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+  }
+
+  &__preview {
+    text-align: center;
+
+    &-pic {
+      margin: 0 auto;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 30px;
+  }
+}
