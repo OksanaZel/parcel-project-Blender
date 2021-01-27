@@ -9,11 +9,10 @@
   line-height: $lh;
 }
 
-@mixin pseudo($h, $w, $bc, $mr) {
+@mixin pseudo($h, $w, $bc) {
   content: '';
   display: block;
   height: $h;
   width: $w;
   background-color: $bc;
-  margin-right: $mr;
 }
