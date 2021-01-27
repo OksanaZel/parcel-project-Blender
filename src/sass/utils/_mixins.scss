@@ -8,3 +8,12 @@
   font-size: $fs;
   line-height: $lh;
 }
+
+@mixin pseudo($h, $w, $bc, $mr) {
+  content: '';
+  display: block;
+  height: $h;
+  width: $w;
+  background-color: $bc;
+  margin-right: $mr;
+}
