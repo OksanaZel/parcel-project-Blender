@@ -15,11 +15,7 @@
 
 .advantages .container {
   @media screen and (min-width: 320px) and (max-width: 767px) {
-    width: 216px;
-  }
-
-  @media screen and (min-width: 1400px) {
-    width: 1344px;
+    padding: 0 52px;
   }
 }
 
@@ -44,13 +40,14 @@
 
   @media screen and (min-width: 1400px) {
     position: relative;
-    @include flex(flex-start, center);
+    width: 438px;
 
-    width: 448px;
+    @include flex(flex-start, center);
   }
 }
 
 .advantages-list__icon-wrapper {
+  display: flex;
   margin-right: 10px;
 }
 
