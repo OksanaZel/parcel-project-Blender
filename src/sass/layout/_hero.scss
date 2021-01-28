@@ -83,6 +83,10 @@
     &__discription {
       padding-right: 40px;
     }
+
+    &__preview-pic {
+      width: 565px;
+    }
   }
 }
 
@@ -102,5 +106,13 @@
       font-size: 20px;
       line-height: 1.65;
     }
+
+    &__preview-pic {
+      width: 1257px;
+    }
+  }
+
+  .modal__btn {
+    height: 70px;
   }
 }
