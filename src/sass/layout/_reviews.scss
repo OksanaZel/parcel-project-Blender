@@ -5,6 +5,13 @@
   }
 }
 
+.slider__item {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
+
 //загаловок секции
 .reviews__title {
   text-align: center;
