@@ -42,7 +42,7 @@
   }
 }
 
-.head-btn {
+.modal-btn {
   justify-content: center;
 }
 
@@ -68,7 +68,7 @@
   }
 
   .burger {
-    position: absolute;
+    position: relative;
     display: inline-flex;
     top: 35px;
     right: 20px;
@@ -128,7 +128,7 @@
     margin-right: 40px;
   }
 
-  .head-btn {
+  .modal-btn {
     margin-left: 60px;
   }
 }
