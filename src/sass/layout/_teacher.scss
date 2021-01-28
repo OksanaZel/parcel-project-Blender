@@ -1,6 +1,6 @@
-.teacher.section {
-  padding: 50px 40px;
-}
+// .teacher.section {
+//   padding: 50px 40px;
+// }
 
 .teach-title {
   font-family: var(--primary-font-family);
@@ -27,15 +27,17 @@
   line-height: 1.2;
   letter-spacing: 0.06em;
 }
-
-// .progress-list__item::before {
-//   display: inline-block;
-//   content: '';
-//   width: 17px;
-//   height: 14px;
-//   margin-right: 9px;
-//   background-image: url();
-// }
+.progress-list__item {
+  display: inline-block;
+  &::before {
+    display: block;
+    content: '';
+    width: 17px;
+    height: 14px;
+    margin-right: 9px;
+    background-image: url(../images/teacher/Group.svg);
+  }
+}
 
 .progress-list__wrapper {
   border-top: 1px solid #b9b9b9;
@@ -44,6 +46,7 @@
 
 .teach-text-symbol {
   color: var(--accent-color);
+  margin: 20px 0px;
 }
 
 .text {
@@ -54,6 +57,14 @@
   line-height: 1.67;
   color: var(--secondary-text-color);
 }
+
+.teach-text__descr {
+  margin-bottom: 30px;
+}
+.teach-text__descr:last-child {
+  margin-bottom: 10px;
+}
+
 .teach-cert {
   color: var(--accent-color);
   text-decoration: underline;
