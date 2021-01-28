@@ -4,19 +4,16 @@
   padding-bottom: 50px;
   background-color: var(--additional-bg-color);
   height: 545px;
-  margin-bottom: 198px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     height: 340px;
-    margin-bottom: 202px;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     padding-top: 100px;
     padding-bottom: 130px;
     height: 560px;
-    margin-bottom: 280px;
 
     background-image: url('../images/problems/fire-problems.png');
 
@@ -44,7 +41,7 @@
     @include font(800, 26px, 1.3);
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     width: 866px;
     margin-bottom: 70px;
     @include font(800, 46px, 1.3);
@@ -68,7 +65,7 @@
     width: 688px;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     padding: 70px 114px;
     width: 1314px;
   }
@@ -89,7 +86,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1399px) {
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
     width: 236px;
 
     &:not(:nth-last-child(-n + 2)) {
@@ -97,7 +94,7 @@
     }
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     width: 336px;
 
     &:not(:nth-last-child(-n + 3)) {
@@ -112,7 +109,6 @@
   margin-bottom: 5px;
 
   &::before {
-    // @include pseudo(2px, 20px, var(--accent-color));
     content: '';
     display: block;
     height: 2px;
@@ -125,7 +121,7 @@
   letter-spacing: 0.08em;
   color: var(--accent-color);
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     margin-bottom: 10px;
   }
 }
@@ -134,7 +130,7 @@
   @include font(700, 14px, 1.43);
   letter-spacing: 0.08em;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     @include font(700, 20px, 1.2);
   }
 }
