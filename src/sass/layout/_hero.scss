@@ -1,5 +1,5 @@
 .hero {
-  padding: 70px 0;
+  padding: 109px 0;
   background-image: url(../images/hero/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -53,10 +53,10 @@
       margin: 0 auto;
     }
   }
+}
 
-  &__btn {
-    margin-bottom: 30px;
-  }
+.modal__btn {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -66,6 +66,7 @@
     align-items: center;
   }
   .hero {
+    padding: 158px 0;
     background-image: url(../images/hero/hero-bg-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -74,10 +75,44 @@
       font-size: 26px;
       line-height: 1.308;
     }
+
+    &__thumb {
+      text-align: left;
+    }
+
+    &__discription {
+      padding-right: 40px;
+    }
+
+    &__preview-pic {
+      width: 565px;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero {
+    padding: 150px 0;
+    background-image: url(../images/hero/hero-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__title {
+      font-size: 58px;
+      line-height: 1.293;
+    }
+
+    &__discription {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+
+    &__preview-pic {
+      width: 1257px;
+    }
   }
 
-  .hero__preview-pic {
-    width: 375.75px;
-    height: 320px;
+  .modal__btn {
+    height: 70px;
   }
 }
