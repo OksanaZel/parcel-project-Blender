@@ -1,0 +1,33 @@
+.modal-btn {
+  width: 260px;
+  height: 48px;
+  border: 2px solid var(--accent-color);
+  background-color: transparent;
+  color: var(--accent-color);
+
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    outline: none;
+  }
+
+  &.revers {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--accent-color);
+    }
+  }
+}
