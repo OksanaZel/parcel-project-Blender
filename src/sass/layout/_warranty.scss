@@ -29,7 +29,65 @@
   font-size: 12px;
   line-height: 1.67;
 }
-.warranty-list__item:not(:last-child) {
-  margin-bottom: 23px;
+
+.warranty-list__item {
+  padding-left: 30px;
+
+  position: relative;
 }
-.warranty-list__item
+
+.warranty-list__item:not(:last-child) {
+  border-left: 1px dashed #b9b9b9;
+  padding-bottom: 23px;
+}
+
+.warranty-list__item::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 20px;
+  background-image: url(../images/teacher/flame.svg);
+  left: -7px;
+  top: -2px;
+}
+
+.warranty-list.list::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 100%;
+}
+
+.warranty-list__text {
+  width: 245px;
+}
+@media screen and (min-width: 768px) {
+  .warranty-list__text {
+    width: 559px;
+  }
+  .progress-list__item {
+    width: 375px;
+  }
+  .teach-text__descr {
+    width: 401px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .warranty-list__text {
+    width: 1038px;
+  }
+  .progress-list__item {
+    width: 530px;
+  }
+  .warranty-list {
+    font-size: 20px;
+  }
+  .teach-text__descr {
+    width: 641px;
+  }
+  .warranty-title {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
