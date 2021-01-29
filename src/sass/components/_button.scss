@@ -1,5 +1,4 @@
 .modal-btn {
-  margin-bottom: 30px;
   width: 260px;
   height: 48px;
   border: 2px solid var(--accent-color);
@@ -14,8 +13,21 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    outline: none;
+  }
+
   &.revers {
     background-color: var(--accent-color);
     color: var(--white-text-color);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--accent-color);
+    }
   }
 }

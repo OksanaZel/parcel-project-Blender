@@ -1,118 +1,115 @@
-// .hero {
-//   padding: 109px 0;
-//   background-image: url(../images/hero/hero-bg-mobile.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
+.hero {
+  padding: 50px 0;
+  background-image: url(../images/hero/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 
-//   &__thumb {
-//     text-align: center;
-//   }
+  &__thumb {
+    text-align: center;
+  }
 
-//   &__title {
-//     margin-bottom: 30px;
+  &__title {
+    margin-bottom: 30px;
 
-//     font-family: var(--primary-font-family);
-//     font-style: normal;
-//     font-weight: 800;
-//     font-size: 20px;
-//     line-height: 1.35;
-//     letter-spacing: 0.03em;
-//     text-align: left;
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.35;
+    letter-spacing: 0.03em;
+    text-align: left;
 
-//     color: var(--primary-text-color);
-//   }
+    color: var(--primary-text-color);
+  }
 
-//   &__discription {
-//     margin-bottom: 30px;
+  &__discription {
+    margin-bottom: 30px;
 
-//     font-family: Montserrat;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.571;
-//     letter-spacing: 0.08em;
-//     text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.571;
+    letter-spacing: 0.08em;
+    text-align: left;
 
-//     color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
 
-//     &-span-2 {
-//       font-weight: 700;
-//       color: var(--additional-bg-color);
-//     }
+    &-span-2 {
+      font-weight: 700;
+      color: var(--additional-bg-color);
+    }
 
-//     &-span-3 {
-//       font-weight: 700;
-//       color: var(--accent-color);
-//     }
-//   }
+    &-span-3 {
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+  }
 
-//   &__preview {
-//     text-align: center;
+  &__preview {
+    text-align: center;
 
-//     &-pic {
-//       margin: 0 auto;
-//     }
-//   }
-// }
+    &-pic {
+      margin: 0 auto;
+    }
+  }
+}
 
-// .modal__btn {
-//   margin-bottom: 30px;
-// }
+@media screen and (min-width: 768px) {
+  .hero .container {
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+  }
+  .hero {
+    padding: 70px 0;
+    background-image: url(../images/hero/hero-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 
-// @media screen and (min-width: 768px) {
-//   .hero .container {
-//     display: flex;
-//     flex-shrink: 0;
-//     align-items: center;
-//   }
-//   .hero {
-//     padding: 158px 0;
-//     background-image: url(../images/hero/hero-bg-tablet.jpg);
-//     background-repeat: no-repeat;
-//     background-position: center;
+    &__title {
+      font-size: 26px;
+      line-height: 1.308;
+    }
 
-//     &__title {
-//       font-size: 26px;
-//       line-height: 1.308;
-//     }
+    &__thumb {
+      text-align: left;
+    }
 
-//     &__thumb {
-//       text-align: left;
-//     }
+    &__discription {
+      padding-right: 40px;
+    }
 
-//     &__discription {
-//       padding-right: 40px;
-//     }
+    &__preview-pic {
+      width: 565px;
+    }
+  }
+}
 
-//     &__preview-pic {
-//       width: 565px;
-//     }
-//   }
-// }
+@media screen and (min-width: 1400px) {
+  .hero {
+    padding: 150px 0;
+    background-image: url(../images/hero/hero-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
-// @media screen and (min-width: 1400px) {
-//   .hero {
-//     padding: 150px 0;
-//     background-image: url(../images/hero/hero-bg-desktop.jpg);
-//     background-repeat: no-repeat;
-//     background-position: center;
+    &__title {
+      font-size: 58px;
+      line-height: 1.293;
+    }
 
-//     &__title {
-//       font-size: 58px;
-//       line-height: 1.293;
-//     }
+    &__discription {
+      font-size: 20px;
+      line-height: 1.65;
+    }
 
-//     &__discription {
-//       font-size: 20px;
-//       line-height: 1.65;
-//     }
+    &__preview-pic {
+      width: 1257px;
+    }
+  }
 
-//     &__preview-pic {
-//       width: 1257px;
-//     }
-//   }
-
-//   .modal__btn {
-//     height: 70px;
-//   }
-// }
+  .modal__btn {
+    height: 70px;
+  }
+}
