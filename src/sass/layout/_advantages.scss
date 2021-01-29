@@ -7,7 +7,7 @@
     padding-bottom: 50px;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     padding-top: 97px;
     padding-bottom: 130px;
   }
@@ -38,7 +38,7 @@
     width: 216px;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     position: relative;
     width: 438px;
 
@@ -55,7 +55,7 @@
   width: 59px;
   height: 60px;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     width: 100px;
     height: 102px;
   }
@@ -65,13 +65,9 @@
   @include font(700, 14px, 1.43);
   letter-spacing: 0.08em;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1344px) {
     position: absolute;
-    left: 19%;
+    left: 20%;
     @include font(700, 20px, 1.65);
-  }
-
-  @media screen and (min-width: 1400px) {
-    width: 360px;
   }
 }
