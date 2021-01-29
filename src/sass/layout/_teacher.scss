@@ -1,6 +1,6 @@
-// .teacher.section {
-//   padding: 50px 40px;
-// }
+.teacher.section {
+  padding: 50px 40px 0px 40px;
+}
 
 .teach-title {
   font-family: var(--primary-font-family);
@@ -10,6 +10,7 @@
   line-height: 1.3;
   margin-bottom: 30px;
 }
+
 .teach-title__name {
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -17,6 +18,7 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.08em;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 .progress-list {
@@ -28,15 +30,19 @@
   letter-spacing: 0.06em;
 }
 .progress-list__item {
-  display: inline-block;
+  display: flex;
+  margin-bottom: 15px;
   &::before {
     display: block;
     content: '';
     width: 17px;
     height: 14px;
     margin-right: 9px;
-    background-image: url(../images/teacher/Group.svg);
+    background-image: url(../images/teacher/done.svg);
   }
+}
+.progress-list__item:last-child {
+  margin-bottom: 0px;
 }
 
 .progress-list__wrapper {
@@ -49,8 +55,8 @@
   margin: 20px 0px;
 }
 
-.text {
-  font-family: Montserrat;
+.teach-text__wrapper {
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -68,4 +74,9 @@
 .teach-cert {
   color: var(--accent-color);
   text-decoration: underline;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.76;
 }
