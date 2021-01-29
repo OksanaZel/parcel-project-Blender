@@ -1,5 +1,5 @@
 .hero {
-  padding: 109px 0;
+  padding: 50px 0;
   background-image: url(../images/hero/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -55,18 +55,14 @@
   }
 }
 
-.modal__btn {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .hero .container {
     display: flex;
     flex-shrink: 0;
-    align-items: center;
+    align-items: flex-start;
   }
   .hero {
-    padding: 158px 0;
+    padding: 70px 0;
     background-image: url(../images/hero/hero-bg-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -83,6 +79,10 @@
     &__discription {
       padding-right: 40px;
     }
+
+    &__preview-pic {
+      width: 565px;
+    }
   }
 }
 
@@ -92,6 +92,7 @@
     background-image: url(../images/hero/hero-bg-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
     &__title {
       font-size: 58px;
@@ -102,5 +103,13 @@
       font-size: 20px;
       line-height: 1.65;
     }
+
+    &__preview-pic {
+      width: 1257px;
+    }
+  }
+
+  .modal__btn {
+    height: 70px;
   }
 }
