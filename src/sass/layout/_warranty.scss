@@ -1,11 +1,12 @@
 .warranty.section {
   padding: 0px 0px;
 }
-
-.background {
-  background: #f1f1f1;
+.warranty .container {
+  background-color: #f1f1f1;
+  @media screen and (min-width: 768px) {
+    background-color: #ffffff;
+  }
 }
-
 .warranty-title {
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -17,30 +18,38 @@
   margin-bottom: 30px;
   padding-top: 50px;
 }
-
 .warranty-list__accent {
   color: var(--accent-color);
 }
+.warranty-list__wrapper {
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 688px;
+    padding-left: 79px;
+    padding-right: 50px;
+  }
+  @media screen and (min-width: 1344px) {
+    width: 1344px;
+    padding: 50px 112px;
+  }
+}
 .warranty-list {
-  padding: 30px 20px;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
 }
-
 .warranty-list__item {
-  padding-left: 30px;
-
   position: relative;
+  padding-left: 30px;
 }
-
 .warranty-list__item:not(:last-child) {
   border-left: 1px dashed #b9b9b9;
   padding-bottom: 23px;
 }
-
 .warranty-list__item::before {
   content: '';
   position: absolute;
@@ -51,20 +60,7 @@
   top: -2px;
 }
 
-.warranty-list.list::before {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 100%;
-}
-
-.warranty-list__text {
-  width: 245px;
-}
 @media screen and (min-width: 768px) {
-  .warranty-list__text {
-    width: 559px;
-  }
   .progress-list__item {
     width: 375px;
   }
@@ -72,11 +68,7 @@
     width: 401px;
   }
 }
-
 @media screen and (min-width: 1344px) {
-  .warranty-list__text {
-    width: 1038px;
-  }
   .progress-list__item {
     width: 530px;
   }
