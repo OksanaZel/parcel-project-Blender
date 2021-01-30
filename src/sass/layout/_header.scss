@@ -1,7 +1,6 @@
 .header {
-  position: relative;
+  position: absolute;
   width: 100%;
-
   padding-top: 30px;
 }
 
@@ -160,6 +159,7 @@
 @media screen and (min-width: 1400px) {
   .logo {
     margin-right: 144px;
+    letter-spacing: 0.02em;
   }
 
   .logo__menu {
@@ -200,9 +200,19 @@
 
   .modal-btn {
     display: block;
+    width: 354px;
+    height: 70px;
+
+    font-size: 14px;
+    line-height: 1.214;
 
     .header & {
       margin-left: 60px;
+      width: 336px;
+      height: 70px;
+
+      font-size: 14px;
+      line-height: 1.214;
     }
   }
 
