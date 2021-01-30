@@ -188,7 +188,7 @@
     display: flex;
     align-items: center;
     font-family: var(--primary-font-family);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.08em;
@@ -267,7 +267,7 @@
 
     align-items: center;
     font-family: var(--primary-font-family);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 12px;
     line-height: 1.667;
     letter-spacing: 0.08em;
@@ -286,7 +286,7 @@
       content: '';
       display: block;
       height: 2px;
-      width: 12px;
+      width: 20px;
       background-color: var(--accent-color);
       margin-right: 6px;
       @media screen and (min-width: 1680px) {
@@ -336,7 +336,7 @@
     position: relative;
 
     font-family: var(--primary-font-family);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.36;
     letter-spacing: 0.03em;
@@ -382,7 +382,7 @@
     display: flex;
     align-items: center;
     font-family: var(--primary-font-family);
-    font-weight: bold;
+    font-weight: 800;
     font-size: 14px;
     line-height: 1.649;
     letter-spacing: 0.08em;
@@ -396,7 +396,7 @@
       content: '';
       display: block;
       height: 2px;
-      width: 12px;
+      width: 20px;
       background-color: var(--accent-color);
       margin-right: 6px;
       @media screen and (min-width: 1680px) {
