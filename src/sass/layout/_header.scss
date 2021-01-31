@@ -1,13 +1,17 @@
 .header {
-  position: relative;
+  position: absolute;
   width: 100%;
-
   padding-top: 30px;
 }
 
 .logo__icon {
   width: 19px;
   height: 24px;
+}
+
+.container-burger {
+  width: 320px;
+  padding: 0 20px;
 }
 
 .burger {
@@ -119,6 +123,11 @@
     margin-right: 40px;
   }
 
+  .container-burger {
+    width: 768px;
+    padding: 0 40px;
+  }
+
   .menu-container {
     padding-top: 34px;
   }
@@ -160,10 +169,16 @@
 @media screen and (min-width: 1400px) {
   .logo {
     margin-right: 144px;
+    letter-spacing: 0.02em;
   }
 
   .logo__menu {
     display: none;
+  }
+
+  .container-burger {
+    width: 1344px;
+    padding: 0 15px;
   }
 
   .nav__list {
@@ -200,9 +215,19 @@
 
   .modal-btn {
     display: block;
+    width: 354px;
+    height: 70px;
+
+    font-size: 14px;
+    line-height: 1.214;
 
     .header & {
       margin-left: 60px;
+      width: 336px;
+      height: 70px;
+
+      font-size: 14px;
+      line-height: 1.214;
     }
   }
 
