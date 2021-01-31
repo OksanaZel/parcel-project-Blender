@@ -117,83 +117,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../images/hero/hero-bg-mobile.jpg":[["hero-bg-mobile.5bb75773.jpg","images/hero/hero-bg-mobile.jpg"],"images/hero/hero-bg-mobile.jpg"],"./../images/hero/hero-bg-tablet.jpg":[["hero-bg-tablet.8fce3e7b.jpg","images/hero/hero-bg-tablet.jpg"],"images/hero/hero-bg-tablet.jpg"],"./../images/hero/hero-bg-desktop.jpg":[["hero-bg-desktop.74d2925f.jpg","images/hero/hero-bg-desktop.jpg"],"images/hero/hero-bg-desktop.jpg"],"./../images/problems/fire-problems.png":[["fire-problems.f373d507.png","images/problems/fire-problems.png"],"images/problems/fire-problems.png"],"./../images/problems/fire-problems@2x.png":[["fire-problems@2x.24b64f50.png","images/problems/fire-problems@2x.png"],"images/problems/fire-problems@2x.png"],"./../images/program/program-mobile-1.jpg":[["program-mobile-1.3bd0585a.jpg","images/program/program-mobile-1.jpg"],"images/program/program-mobile-1.jpg"],"./../images/program/program-mobile-1@2x.jpg":[["program-mobile-1@2x.b1951df6.jpg","images/program/program-mobile-1@2x.jpg"],"images/program/program-mobile-1@2x.jpg"],"./../images/program/program-tablet-1.jpg":[["program-tablet-1.b2e33b1e.jpg","images/program/program-tablet-1.jpg"],"images/program/program-tablet-1.jpg"],"./../images/program/program-tablet-1@2x.jpg":[["program-tablet-1@2x.e6d77f2e.jpg","images/program/program-tablet-1@2x.jpg"],"images/program/program-tablet-1@2x.jpg"],"./../images/program/program-desktop-1.jpg":[["program-desktop-1.16ec13f7.jpg","images/program/program-desktop-1.jpg"],"images/program/program-desktop-1.jpg"],"./../images/program/program-desktop-1@2x.jpg":[["program-desktop-1@2x.bae58727.jpg","images/program/program-desktop-1@2x.jpg"],"images/program/program-desktop-1@2x.jpg"],"./../images/teacher/done.svg":[["done.4d2fee9b.svg","images/teacher/done.svg"],"images/teacher/done.svg"],"./../images/teacher/flame.svg":[["flame.b5c69f67.svg","images/teacher/flame.svg"],"images/teacher/flame.svg"],"./../images/review/icon-previous-arrow.svg":[["icon-previous-arrow.6ba5e770.svg","images/review/icon-previous-arrow.svg"],"images/review/icon-previous-arrow.svg"],"./../images/review/icon-next-arrow.svg":[["icon-next-arrow.9ec8118e.svg","images/review/icon-next-arrow.svg"],"images/review/icon-next-arrow.svg"],"./../images/review/review-tablet-ac@2x.jpg":[["review-tablet-ac@2x.7e1a98b9.jpg","images/review/review-tablet-ac@2x.jpg"],"images/review/review-tablet-ac@2x.jpg"],"./../images/review/review-mobile-2@2x.jpg":[["review-mobile-2@2x.581a6220.jpg","images/review/review-mobile-2@2x.jpg"],"images/review/review-mobile-2@2x.jpg"],"./../images/review/review-mobile-3@2x.jpg":[["review-mobile-3@2x.cdb50157.jpg","images/review/review-mobile-3@2x.jpg"],"images/review/review-mobile-3@2x.jpg"],"./../images/review/review-mobile-4@2x.jpg":[["review-mobile-4@2x.7d3e9fcb.jpg","images/review/review-mobile-4@2x.jpg"],"images/review/review-mobile-4@2x.jpg"],"./../images/review/review-tablet-5@2x.jpg":[["review-tablet-5@2x.b15a6bba.jpg","images/review/review-tablet-5@2x.jpg"],"images/review/review-tablet-5@2x.jpg"],"./../images/review/review-tablet-6@2x.jpg":[["review-tablet-6@2x.a3268989.jpg","images/review/review-tablet-6@2x.jpg"],"images/review/review-tablet-6@2x.jpg"],"./../images/review/review-tablet-7@2x.jpg":[["review-tablet-7@2x.b571ff84.jpg","images/review/review-tablet-7@2x.jpg"],"images/review/review-tablet-7@2x.jpg"],"./../images/registration/reg-mobile.jpg":[["reg-mobile.0e9bb44c.jpg","images/registration/reg-mobile.jpg"],"images/registration/reg-mobile.jpg"],"./../images/registration/reg-mobile@2x.jpg":[["reg-mobile@2x.5383d17f.jpg","images/registration/reg-mobile@2x.jpg"],"images/registration/reg-mobile@2x.jpg"],"./../images/registration/reg-tablet.jpg":[["reg-tablet.2b13dd72.jpg","images/registration/reg-tablet.jpg"],"images/registration/reg-tablet.jpg"],"./../images/registration/reg-tablet@2x.jpg":[["reg-tablet@2x.5ffa6c4c.jpg","images/registration/reg-tablet@2x.jpg"],"images/registration/reg-tablet@2x.jpg"],"./../images/registration/reg-desktop.jpg":[["reg-desktop.290229d7.jpg","images/registration/reg-desktop.jpg"],"images/registration/reg-desktop.jpg"],"./../images/registration/reg-desktop@2x.jpg":[["reg-desktop@2x.f5770a34.jpg","images/registration/reg-desktop@2x.jpg"],"images/registration/reg-desktop@2x.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"js/menu.js":[function(require,module,exports) {
+(function () {
+  var menuBtnRef = document.querySelector("[data-menu-button]");
+  var mobileMenuRef = document.querySelector("[data-menu]");
+  menuBtnRef.addEventListener("click", function () {
+    var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+    menuBtnRef.classList.toggle("is-open");
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
+    mobileMenuRef.classList.toggle("is-open");
+  });
+})();
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +332,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/menu.js"], null)
+//# sourceMappingURL=/menu.0c91648c.js.map
