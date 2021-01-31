@@ -9,6 +9,11 @@
   height: 24px;
 }
 
+.container-burger {
+  width: 320px;
+  padding: 0 20px;
+}
+
 .burger {
   display: inline-flex;
   padding: 0;
@@ -118,6 +123,11 @@
     margin-right: 40px;
   }
 
+  .container-burger {
+    width: 768px;
+    padding: 0 40px;
+  }
+
   .menu-container {
     padding-top: 34px;
   }
@@ -164,6 +174,11 @@
 
   .logo__menu {
     display: none;
+  }
+
+  .container-burger {
+    width: 1344px;
+    padding: 0 15px;
   }
 
   .nav__list {
