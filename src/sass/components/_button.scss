@@ -51,4 +51,10 @@
     border: 2px solid var(--accent-color);
     outline: none;
   }
+  @media screen and (min-width: 1344px) {
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+    margin-top: 80px;
+  }
 }
