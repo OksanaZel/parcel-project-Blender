@@ -1,3 +1,19 @@
+.teacher.section {
+  padding-top: 270px;
+}
+
+@media screen and (min-width: 768px) {
+  .teacher.section {
+    padding-top: 302px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .teacher.section {
+    padding-top: 329px;
+  }
+}
+
 .teach-title {
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -39,10 +55,9 @@
 }
 
 @media screen and (min-width: 1344px) {
-  // .teach-left {
-  //   width: 530px;
-  //   padding-right: 30px;
-  // }
+  .teach-left {
+    padding-right: 30px;
+  }
 }
 
 .teach-title__name {
@@ -52,7 +67,6 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.08em;
-  // margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -80,8 +94,7 @@
 .progress-list__item {
   display: flex;
   margin-bottom: 15px;
-  padding-left: 20px;
-  position: relative;
+
   &::before {
     display: block;
     content: '';
@@ -89,9 +102,6 @@
     height: 14px;
     margin-right: 9px;
     background-image: url(../images/teacher/done.svg);
-    position: absolute;
-    left: 0px;
-    top: 2px;
   }
 }
 .progress-list__item:last-child {
@@ -113,24 +123,22 @@
   margin: 20px 0px;
 }
 
-.teach-text__wrapper {
+.teach-text__descr {
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
   color: var(--secondary-text-color);
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1344px) {
-  .teach-text__wrapper {
+  .teach-text__descr {
     font-size: 18px;
   }
 }
 
-.teach-text__descr {
-  margin-bottom: 30px;
-}
 .teach-text__descr:last-child {
   margin-bottom: 10px;
 }
@@ -149,4 +157,26 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.76;
+}
+
+@media screen and (min-width: 1344px) {
+  .teach-cert {
+    font-size: 18px;
+  }
+}
+
+.progress-list__text {
+  width: 253px;
+}
+
+@media screen and (min-width: 768px) {
+  .progress-list__text {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .progress-list__text {
+    width: 530px;
+  }
 }
