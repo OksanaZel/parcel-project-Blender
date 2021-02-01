@@ -1,6 +1,13 @@
-# parcel-project-template
+# parcel-project-Blender
 
 ## Developing
+Олена Мандровська - team lead (footer + registaration form)
+Катерина Верещагіна - scrum master (slider-review)
+Олександр Туряниця (header + hero)
+Оксана Зеленевська (problems + advantages)
+Дмитро Мар'янченко (program)
+Ілона Кавіцька (methods)
+Галина Губко (teacher + warranty)
 
 ### Prerequisites
 
