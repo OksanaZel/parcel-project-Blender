@@ -1,0 +1,76 @@
+.chat-button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+
+  margin: 0;
+  padding: 13px 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+  box-shadow: -4px -3px 69px 6px rgba(0, 0, 0, 0.53);
+  &.slick-slider {
+    position: fixed;
+    right: 30px;
+    bottom: 70px;
+  }
+}
+
+.chat {
+  margin: 0 auto;
+  width: 55px;
+  height: 55px;
+  //   padding-bottom: 5px;
+
+  color: var(--accent-color);
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.icon-chat,
+.icon-facebook,
+.icon-whatsapp,
+.icon-telegram,
+.icon-viber {
+  fill: var(--accent-color);
+  text-align: center;
+}
+.send-msg {
+  font-weight: 600px;
+  font-size: 7px;
+}
+.send {
+  display: flex;
+  flex-direction: column;
+}
+//Ограничивающий блок
+.slick-list {
+  overflow: hidden;
+  //   @media screen and(min-width:768px) {
+  //     // margin-bottom: 30px;
+  //     margin-bottom: 6px;
+  //   }
+  //   @media screen and(min-width:1316px) {
+  //     // margin-bottom: 40px;
+  //     margin-bottom: 14px;
+  //   }
+}
+
+// Лента слайдов
+.slick-track {
+  display: flex;
+
+  .chat-button & {
+    padding: 0;
+    width: 55px;
+    height: 55px;
+  }
+}
+//Слайд
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
