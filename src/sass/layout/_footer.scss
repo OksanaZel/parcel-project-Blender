@@ -21,7 +21,7 @@
   justify-content: center;
 
   font-weight: 800;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.23;
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
@@ -39,20 +39,6 @@
 .icon-tel {
   fill: var(--accent-color);
   margin-right: 10px;
-  &:hover,
-  &:focus {
-    animation: tel 300ms infinite 300ms;
-
-    @keyframes tel {
-      50% {
-        transform: translateX(3px) scale(1);
-      }
-
-      100% {
-        transform: translateX(-3px) scale(1.1);
-      }
-    }
-  }
 }
 
 .footer__item .footer__tel {
@@ -64,9 +50,24 @@
   line-height: 1.21;
   letter-spacing: 0.08em;
   color: var(--primary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    animation: tel 500ms infinite 100ms;
+
+    @keyframes tel {
+      50% {
+        transform: translate(2px, 2px) scale(1);
+      }
+
+      100% {
+        transform: translate(-2px, -2px) scale(1.1);
+      }
+    }
+  }
 }
 .footer__insta {
-  display: inline-block;
+  display: block;
   width: 40px;
   height: 40px;
   padding: 7px;
@@ -156,14 +157,18 @@
     font-size: 20px;
   }
   .footer__item .footer__tel {
-    position: relative;
     margin-left: 203px;
     margin-right: 48px;
-    &::after {
+  }
+  .footer__item .footer__insta {
+    position: relative;
+
+    &::before {
       position: absolute;
-      right: -24px;
       content: '';
       display: block;
+      top: 0;
+      left: -24px;
       height: 40px;
       border: 1px solid #b9b9b9;
     }
@@ -199,12 +204,8 @@
     margin: 0 auto;
   }
   .footer__item .footer__tel {
-    position: relative;
     margin-left: 290px;
     margin-right: 40px;
-    &::after {
-      right: -16px;
-    }
   }
   .footer__tel {
     font-size: 30px;
