@@ -39,7 +39,22 @@
 .icon-tel {
   fill: var(--accent-color);
   margin-right: 10px;
+  &:hover,
+  &:focus {
+    animation: tel 300ms infinite 300ms;
+
+    @keyframes tel {
+      50% {
+        transform: translateX(3px) scale(1);
+      }
+
+      100% {
+        transform: translateX(-3px) scale(1.1);
+      }
+    }
+  }
 }
+
 .footer__item .footer__tel {
   @include flex(center, center);
 }
@@ -67,11 +82,52 @@
     #ff1c74 49.22%,
     #6c1cd1 100%
   );
+  color: #fff;
   border-radius: 10px;
+  transition: all 300ms ease-out;
+  &:hover,
+  &:focus {
+    background: #fff;
+    color: #ff1c74;
+  }
 }
 .icon-insta {
-  fill: #fff;
+  fill: currentColor;
 }
+//scroll up
+.scroll__up {
+  display: flex;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  background-color: transparent;
+  text-align: center;
+  padding-top: 8px;
+  justify-content: center;
+  bottom: 130px;
+  right: 20px;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ff6b09;
+    border: none;
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.arrow__icon {
+  cursor: pointer;
+  fill: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    fill: #fff;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer__item .footer__tel {
     margin-top: 20px;
@@ -129,6 +185,9 @@
     width: 21px;
     height: 30px;
   }
+  .scroll__up {
+    bottom: 70px;
+  }
 }
 @media screen and (min-width: 1344px) {
   .footer__contacts {
@@ -150,39 +209,5 @@
   .footer__tel {
     font-size: 30px;
     line-height: 1.23;
-  }
-}
-
-//scroll up
-.scroll__up {
-  display: flex;
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  border: 2px solid var(--accent-color);
-  border-radius: 50%;
-  background-color: transparent;
-  text-align: center;
-  padding-top: 8px;
-  justify-content: center;
-  bottom: 130px;
-  right: 20px;
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: #ff6b09;
-    border: none;
-    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.arrow__icon {
-  cursor: pointer;
-  fill: var(--accent-color);
-
-  &:hover,
-  &:focus {
-    fill: #fff;
   }
 }
