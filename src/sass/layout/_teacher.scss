@@ -14,12 +14,8 @@
   }
 }
 
-.teach-title {
-  font-family: var(--primary-font-family);
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.3;
+.teacher-title {
+  @include font(800, 20px, 1.3);
   margin-bottom: 20px;
 }
 
